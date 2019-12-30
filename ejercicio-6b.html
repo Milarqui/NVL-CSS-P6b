@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Comparaciones</title>
+    <style>
+      div > p {
+        border: 2px solid #fabada;
+      }
+      p.importante {
+        background-color: #00aa00;
+      }
+      p.importante + p {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p class="importante">Aquí debería tener la fabada rodeando al verde.</p>
+      <p>También debería tener el texto en rojo.</p>
+      <p>O en negro.</p>
+    </div>
+    <div>
+      <p class="importante">Más pruebas de fabada.</p>
+      <p>Más tests de rojo.</p>
+      <ul>
+        <li><p>Éste no debería tener nada anormal.</p></li>
+      </ul>
+    </div>
+    <div>
+      <p class="importante">Otra de fabada.</p>
+      <ul>
+        <li><p>Éste no debería tener nada anormal.</p></li>
+      </ul>
+      <p>¿Irá de rojo? No debería...</p>
+    </div>
+  </body>
+</html>
